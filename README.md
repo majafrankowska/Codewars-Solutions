@@ -1,2 +1,2 @@
 # Codewars
-My solution for problems from Codewars in Java
+My solutions for problems from Codewars in Java
