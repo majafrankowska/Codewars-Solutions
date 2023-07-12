@@ -17,7 +17,6 @@ public class Solution {
         }
     }
 
-
     String result = highestNum + " " + lowestNum;
     return result;
     
