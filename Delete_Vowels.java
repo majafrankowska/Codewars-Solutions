@@ -15,5 +15,6 @@ public class Troll {
         }
       
       return newchar;
+        
     }
 }
