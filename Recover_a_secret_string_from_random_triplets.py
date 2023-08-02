@@ -20,4 +20,3 @@ def recoverSecret(triplets):
         dfs(char, visited, result)
 
     return ''.join(reversed(result))
-        
