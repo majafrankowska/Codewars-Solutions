@@ -10,7 +10,7 @@ def generate_bc(url, separator):
                 break
         menus = url. split('/')[1:]
         if menus and 'index.' == menus [-1] [0:6]:
-            menus = menus [:-1]|
+            menus = menus [:-1]
         if not menus:
             return '<span class="active">HOME</span>'
         breadcrumb = '<a href="/">HOME</a>'
