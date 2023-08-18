@@ -54,7 +54,7 @@ def generate_bc(url, separator):
     for item in url[1:]:
         item = sub("-", " ", item.upper())
         if len(item) > 30:
-            item = "".join([w[0] for w in item.split() if w not in ignorelist])
+            item = "".join([w[0] for w in item.split() if w not in ignoreList])
         menu.append (item)
 
     path = ["/"]
