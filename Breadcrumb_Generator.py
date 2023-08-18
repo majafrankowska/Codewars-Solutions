@@ -66,4 +66,4 @@ def generate_bc(url, separator):
         html.append("<a href=\"" + path[i] + "\">" + menu[i] +"</a>")
     html.append("<span class=\"active\">" + menu[-1] +"</span>")
                 
-    return separator.join(html) 
+    return separator.join(html)
