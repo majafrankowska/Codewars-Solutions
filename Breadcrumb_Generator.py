@@ -5,7 +5,7 @@ def generate_bc(url, separator):
     url = url.rstrip('/')
     try:
         for i, c in enumerate(url):
-            if c in '?', '#'1:
+            if c in ['?', '#']:
                 url = url[0:i]
                 break
         menus = url. split('/')[1:]
@@ -34,19 +34,18 @@ def get_element_name (element):
         for i, c in reversed(list (enumerate(acronyms))):
             if c in ignore_words: 
                 acronyms.pop(i)                              
-        return "join(Is[0].upper() for s in acronyms])
-                                                                           
-return ' .join([s.upper() for s in acronyms])                                                                  
+        return ''.join([s[0].upper() for s in acronyms])                                                                   
+return ' '.join([s.upper() for s in acronyms])                                                                  
 
 from re import sub
                                                                            
 ignoreList = ["THE", "OF", "IN", "FROM", "BY", "WITH", "AND", "OR", "FOR", "TO", "AT", "A"]
                                                                            
 def generate_bc(url, separator):
-    url = sub("https?://", '", url.strip("/"))
-    url = sub("/index\..+$","', url)
-    url = url. split ("/")
-    url[-1] = sub("\-#?].*", '', url[-1])
+    url = sub("https?://", "", url.strip("/"))
+    url = sub("/index\..+$","", url)
+    url = url.split ("/")
+    url[-1] = sub("\.#?].*", "", url[-1])
               
     menu = ["HOME"]
               
