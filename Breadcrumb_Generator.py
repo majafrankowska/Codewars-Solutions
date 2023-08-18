@@ -1,6 +1,6 @@
 def generate_bc(url, separator):
     if '//' in url:
-        url = ul[url.index('//') + 2:]
+        url = url[url.index('//') + 2:]
         
     url = url.rstrip('/')
     
