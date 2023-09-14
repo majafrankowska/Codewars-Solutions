@@ -2,7 +2,7 @@
 <div align = "center">
 
 # Codewars
-My solutions in Java to problems from Codewars
+My solutions to problems from Codewars in Java 
 
 <br>
 
